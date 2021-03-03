@@ -1,5 +1,5 @@
 <?php
-/*    // Challenge #1 - "Hola Mundo"
+    // Challenge #1 - "Hola Mundo"
     echo 'Challenge #1 - "Hola Mundo"'.PHP_EOL;
 
     echo "Por favor ingrese su Nombre: ";
@@ -37,7 +37,7 @@
     echo "Por favor ingrese el segundo número: ";
     $number2 = trim(fgets(STDIN));
 
-    echo sprintf("El valor de la suma es: %01.2f",($number1+$number2)).PHP_EOL;
+    echo sprintf("El valor de la suma es: %.2f",($number1+$number2)).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
 
 
@@ -51,7 +51,7 @@
     echo "Por favor ingrese el tercer número: ";
     $number3 = trim(fgets(STDIN));
 
-    echo sprintf("El valor de la operación es: %01.2f",(($number1+$number2)*$number3)).PHP_EOL;
+    echo sprintf("El valor de la operación es: %.2f",(($number1+$number2)*$number3)).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
 
 
@@ -78,4 +78,23 @@
 
     echo sprintf("%s, el año pasado tenías %d años y el próximo año cumplirás %d años", $name, $age - 1, $age + 1).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
-*/
+
+
+    // Challenge #8 - "Divide la cuenta"
+    echo 'Challenge #8 - "Divide la cuenta"'.PHP_EOL;
+
+    echo "Por favor indique el total a pagar: ";
+    $baseCheck = trim(fgets(STDIN));
+    echo "Por favor indique cuantas personas para dividir la cuenta: ";
+    $totalPersons = trim(fgets(STDIN));
+    echo "Por favor indique el porcentaje de propina: ";
+    $tipPercentage = trim(fgets(STDIN));
+    echo "Por favor indique el porcentaje de impuestos: ";
+    $taxes = trim(fgets(STDIN));
+
+    $totalCheck = ($baseCheck + $tipPercentage) + (($baseCheck + $tipPercentage) * ($taxes/100));
+
+    echo sprintf("Total a pagar: $ %.2f", $totalCheck).PHP_EOL;
+    echo sprintf("Total a pagar por persona: $ %.2f", $totalCheck / $totalPersons).PHP_EOL;
+
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
