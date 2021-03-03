@@ -97,9 +97,9 @@
     echo sprintf("Total a pagar: $ %.2f", $totalCheck).PHP_EOL;
     echo sprintf("Total a pagar por persona: $ %.2f", $totalCheck / $totalPersons).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
-*/
 
-    // Challenge #8 - "Divide la cuenta"
+
+    // Challenge #9 - "Calculando días"
     echo 'Challenge #9 - "Calculando días"'.PHP_EOL;
 
     echo "Por favor indique la cantidad de días: ";
@@ -109,8 +109,15 @@
     $minutes    =   $hours * 60;
     $seconds    =   $minutes * 60;
 
-
     echo sprintf("Total a horas (%d), minutos (%d), segundos (%d)", $hours, $minutes, $seconds).PHP_EOL;
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
+*/
 
+    // Challenge #10 - "Conversor de millas"
+    echo 'Challenge #10 - "Conversor de millas"'.PHP_EOL;
 
+    echo "Por favor indique la cantidad de millas: ";
+    $miles = trim(fgets(STDIN));
+
+    echo sprintf("%d millas, equivalen a %.4f kilómetros", $miles, $miles * 1.609344).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
