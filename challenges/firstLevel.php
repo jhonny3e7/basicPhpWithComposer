@@ -1,33 +1,40 @@
 <?php
-    // Challenge #1 - "Hola Mundo"
-    if($argc > 1)
-        $name = $argv[1];
-    else {
-        echo "Por favor ingrese su Nombre: ";
-        $name = trim(fgets(STDIN));
-    }
+/*    // Challenge #1 - "Hola Mundo"
+    echo 'Challenge #1 - "Hola Mundo"'.PHP_EOL;
+
+    echo "Por favor ingrese su Nombre: ";
+    $name = trim(fgets(STDIN));
 
     echo PHP_EOL."Hola $name".PHP_EOL;
-
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
 
     // Challenge #2 - "Hola... nombre y apellido"
-    if($argc > 1) {
-        $name = $argv[1];
-        $lastName = $argv[2];
-    }
-    else {
-        echo "Por favor ingrese su Nombre: ";
-        $name = trim(fgets(STDIN));
-        echo "Por favor ingrese su Apellido: ";
-        $lastName = trim(fgets(STDIN));
-    }
+    echo 'Challenge #2 - "Hola... nombre y apellido"'.PHP_EOL;
+
+    echo "Por favor ingrese su Nombre: ";
+    $name = trim(fgets(STDIN));
+    echo "Por favor ingrese su Apellido: ";
+    $lastName = trim(fgets(STDIN));
+
 
     echo PHP_EOL."Hola, $name $lastName".PHP_EOL;
-
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
 
     // Challenge #3 - "Mensaje Multilínea"
-    echo 'Platzi cuenta con cursos de '.PHP_EOL.'[MARKETING]'.PHP_EOL.'[DISEÑO Y UX]'.PHP_EOL.'[CRECIMIENTO PROFESIONAL]'.PHP_EOL.'[STARTUPS]'.PHP_EOL.'[DESARROLLO E INGENIERIA]'.PHP_EOL.'[NEGOCIOS Y EMPRENDIMIENTO]'.PHP_EOL.'[CONTENIDO DIGITAL]';
+    echo 'Challenge #3 - "Mensaje Multilínea"'.PHP_EOL;
 
+    echo 'Platzi cuenta con cursos de '.PHP_EOL.'[MARKETING]'.PHP_EOL.'[DISEÑO Y UX]'.PHP_EOL.'[CRECIMIENTO PROFESIONAL]'.PHP_EOL.'[STARTUPS]'.PHP_EOL.'[DESARROLLO E INGENIERIA]'.PHP_EOL.'[NEGOCIOS Y EMPRENDIMIENTO]'.PHP_EOL.'[CONTENIDO DIGITAL]'.PHP_EOL;
+
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
+*/
     // Challenge #4 - "Suma de enteros"
+    echo 'Challenge #4 - "Suma de enteros... no tan enteros"'.PHP_EOL;
+
+    echo "Por favor ingrese el primer número: ";
+    $number1 = trim(fgets(STDIN));
+    echo "Por favor ingrese el segundo número: ";
+    $number2 = trim(fgets(STDIN));
+
+
+    echo sprintf("El valor de la suma es: %01.2f",($number1+$number2)).PHP_EOL;
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
