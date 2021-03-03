@@ -1,5 +1,5 @@
 <?php
-/*    // Challenge #1 - "Hola Mundo"
+    // Challenge #1 - "Hola Mundo"
     echo 'Challenge #1 - "Hola Mundo"'.PHP_EOL;
 
     echo "Por favor ingrese su Nombre: ";
@@ -111,7 +111,7 @@
 
     echo sprintf("Total a horas (%d), minutos (%d), segundos (%d)", $hours, $minutes, $seconds).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
-*/
+
 
     // Challenge #10 - "Conversor de millas"
     echo 'Challenge #10 - "Conversor de millas"'.PHP_EOL;
@@ -120,4 +120,16 @@
     $miles = trim(fgets(STDIN));
 
     echo sprintf("%d millas, equivalen a %.4f kilómetros", $miles, $miles * 1.609344).PHP_EOL;
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
+
+
+    // Challenge #11 - "Cuantas veces un numero en otro"
+    echo 'Challenge #11 - "Cuantas veces un número en otro"'.PHP_EOL;
+
+    echo "Por favor ingrese un número (> 1000): ";
+    $number1 = trim(fgets(STDIN));
+    echo "Por favor ingrese un número (< 100): ";
+    $number2 = trim(fgets(STDIN));
+
+    echo sprintf("El número %d cabe %d veces en el número %d", $number2, $number1 / $number2, $number1).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
