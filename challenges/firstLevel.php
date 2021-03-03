@@ -54,3 +54,14 @@
     echo sprintf("El valor de la operación es: %01.2f",(($number1+$number2)*$number3)).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
 
+    // Challenge #6 - "Resta de pizzas"
+    echo 'Challenge #6 - "Resta de pizzas"'.PHP_EOL;
+
+    echo "Por favor ingrese la cantidad de rebanadas de pizzas: ";
+    $totalPizzaSlides = trim(fgets(STDIN));
+    // Se infiere de manera aleatoria la cantidad de pizzas consumidas
+    $eatenPizzaSlides = mt_rand(1, $totalPizzaSlides);
+    echo "Se consumieron $eatenPizzaSlides pizzas en la reunión".PHP_EOL;
+    echo sprintf("Quedaron %d pizzas", $totalPizzaSlides - $eatenPizzaSlides).PHP_EOL;
+
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
