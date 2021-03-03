@@ -1,5 +1,5 @@
 <?php
-    // Challenge #1 - "Hola Mundo"
+/*    // Challenge #1 - "Hola Mundo"
     echo 'Challenge #1 - "Hola Mundo"'.PHP_EOL;
 
     echo "Por favor ingrese su Nombre: ";
@@ -96,5 +96,21 @@
 
     echo sprintf("Total a pagar: $ %.2f", $totalCheck).PHP_EOL;
     echo sprintf("Total a pagar por persona: $ %.2f", $totalCheck / $totalPersons).PHP_EOL;
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
+*/
+
+    // Challenge #8 - "Divide la cuenta"
+    echo 'Challenge #9 - "Calculando días"'.PHP_EOL;
+
+    echo "Por favor indique la cantidad de días: ";
+    $days = trim(fgets(STDIN));
+
+    $hours      =   $days * 24;
+    $minutes    =   $hours * 60;
+    $seconds    =   $minutes * 60;
+
+
+    echo sprintf("Total a horas (%d), minutos (%d), segundos (%d)", $hours, $minutes, $seconds).PHP_EOL;
+
 
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
