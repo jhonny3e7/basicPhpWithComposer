@@ -1,5 +1,5 @@
 <?php
-    // Challenge #1 - "Hola Mundo"
+/*    // Challenge #1 - "Hola Mundo"
     echo 'Challenge #1 - "Hola Mundo"'.PHP_EOL;
 
     echo "Por favor ingrese su Nombre: ";
@@ -54,6 +54,7 @@
     echo sprintf("El valor de la operación es: %01.2f",(($number1+$number2)*$number3)).PHP_EOL;
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
 
+
     // Challenge #6 - "Resta de pizzas"
     echo 'Challenge #6 - "Resta de pizzas"'.PHP_EOL;
 
@@ -61,7 +62,20 @@
     $totalPizzaSlides = trim(fgets(STDIN));
     // Se infiere de manera aleatoria la cantidad de pizzas consumidas
     $eatenPizzaSlides = mt_rand(1, $totalPizzaSlides);
+
     echo "Se consumieron $eatenPizzaSlides pizzas en la reunión".PHP_EOL;
     echo sprintf("Quedaron %d pizzas", $totalPizzaSlides - $eatenPizzaSlides).PHP_EOL;
-
     echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
+
+
+    // Challenge #7 - "Edad futura y pasada"
+    echo 'Challenge #7 - "Edad futura y pasada"'.PHP_EOL;
+
+    echo "Por favor ingrese su nombre: ";
+    $name = trim(fgets(STDIN));
+    echo "Por favor ingrese su edad: ";
+    $age = trim(fgets(STDIN));
+
+    echo sprintf("%s, el año pasado tenías %d años y el próximo año cumplirás %d años", $name, $age - 1, $age + 1).PHP_EOL;
+    echo PHP_EOL.'*********'.PHP_EOL.PHP_EOL;
+*/
